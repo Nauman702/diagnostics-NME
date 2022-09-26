@@ -62,18 +62,12 @@ def validate_data(data_directory):
     # ValueError
     # This is a placeholder, replace it to write your solution.
     data_pth = Path() / data_directory
-    # print(data_pth)
+    
     hash_pth = list(data_pth.glob("**/*.txt"))
     hash_pth = str(hash_pth[0])
-    # hash_pth= "data_pth/**/hash_list.txt"
-    # print(hash_pth[0])
 
-    # hash_pth = Path(data_directory)
-    # hash_pth =  data_pth/group-0/'data_hashes.txt'
-    # data_dir = hash_pth.parent
     with open(hash_pth) as f:
         lines = f.readlines()
-        # print(lines)
         f.close()
     # Split into lines.
     # lines.strip()
@@ -84,11 +78,6 @@ def validate_data(data_directory):
         spl = line.split()
         # Calculate actual hash for given filename.
         d_pth = list(data_pth.glob("**/*"))
- #outlier-detection
-        # print(d_pth)
-
-        #print(d_pth)
-# main
         cal_hash = file_hash(data_pth / spl[1])
         # Check actual hash against expected hash
         act_hash = spl[0]

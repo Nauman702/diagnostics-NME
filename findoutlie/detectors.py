@@ -64,10 +64,10 @@ def iqr_detector(measures, iqr_proportion=1.5):
         if (measures[i] > (Q3 + IQR * iqr_proportion)) | (
             measures[i] < (Q1 - IQR * iqr_proportion)
         ):
-    
+
             outlier.append(True)
         else:
             outlier.append(False)
 
-    #print(outlier)
+    # print(outlier)
     return np.array(outlier)
