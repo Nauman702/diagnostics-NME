@@ -20,9 +20,15 @@ MY_DIR = Path(__file__).parent
 # Hint: see the solutions if you are stuck.
 # +++your code here+++
 
+
 # import sys
 # export PYTHONPATH=$PYTHONPATH:C:/Users/nauma/Documents/nipraxis-work/diagnostics-NME/findoutlie
 # sys.path.append('C:/Users/nauma/Documents/nipraxis-work/diagnostics-NME/findoutlie')
+
+#import sys
+#export PYTHONPATH=$PYTHONPATH:C:/Users/nauma/Documents/nipraxis-work/diagnostics-NME/findoutlie
+#sys.path.append('C:/Users/nauma/Documents/nipraxis-work/diagnostics-NME/findoutlie')
+
 import numpy as np
 
 # This import needs the directory containing the findoutlie directory
